@@ -7,8 +7,7 @@ include_in_header: false
 **Last updated**  
 January 21 2020
  
-Imagitor Privacy Policy
------------------------
+# Privacy Policy
 
 BooleanBites Ltd built the Imagitor app as a Free app. This SERVICE is provided by BooleanBites Ltd at no cost and is intended for use as is.
 
