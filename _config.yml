@@ -34,17 +34,33 @@ youtube_username                          : imagitor
 # Feature List                            Edit, add or remove features to be presented.
 features                                  :
 
-  - title                                 : Say it with Urdu Fonts
-    description                           : Design with gorgeous Unicode based Urdu fonts like Jameel, Mehr Nastaleeq, Nafees Riqa.
+  - title                                 : Large Collection of Urdu Fonts
+    description                           : Have access to our collection of stylish Urdu fonts.
+    fontawesome_icon_name                 : font
+    
+  - title                                 : Beautify your text with many Text Effects
+    description                           : Make your text stand out with dozens of text effects like : Gradients, Shadow, Stroke, Background
     fontawesome_icon_name                 : magic
+    
+  - title                                 : Sayt it with expressive Stickers and Shapes
+    description                           : Add stickers, emojis, shapes, as you want
+    fontawesome_icon_name                 : star
+    
+  - title                                 : Create your social media Logo
+    description                           : With stickers, shapes and text, create your own professional logo
+    fontawesome_icon_name                 : icons
+
+  - title                                 : Save your works as Project
+    description                           : Create a master piece and save it as project for future editions.
+    fontawesome_icon_name                 : save
     
   - title                                 : Embellish and Enhance
     description                           : Urdu Editor comes with easy-to-use editing tools to help you make the text look amazing
-    fontawesome_icon_name                 : mobile
+    fontawesome_icon_name                 : microscope
 
   - title                                 : Format Urdu Like a Pro!
     description                           : Experiment with many fonts, dozen colors, size and border to create artful effects for your Urdu text.
-    fontawesome_icon_name                 : play-circle
+    fontawesome_icon_name                 : dragon
 
   - title                                 : Resize Canvas, Background Color
     description                           : Quickly focus on what’s important and personalize with background color and resize your canvas to best fit your crafty requirements.
@@ -52,7 +68,7 @@ features                                  :
 
   - title                                 : Share from App
     description                           : Save your editing to your camera roll, or share with your social directly from the app by posting to facebook and twitter.
-    fontawesome_icon_name                 : adjust
+    fontawesome_icon_name                 : share
 
   - title                                 : # New Feature Title
     description                           : # New Feature Description
