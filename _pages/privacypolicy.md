@@ -1,10 +1,11 @@
 ---
- layout: page
- title: Privacy Policy
- include_in_header: false
- ---
+layout: page
+title: Privacy Policy
+include_in_header: false
+---
+
 **Last updated**  
- January 20 2020
+January 21 2020
  
 Imagitor Privacy Policy
 -----------------------
