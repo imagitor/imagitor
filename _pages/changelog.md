@@ -7,20 +7,22 @@ include_in_header: false
 # Changelog
 
 <br>
+
 ### 1.8.3
-● New design for online templates.
-● More frames in shapes.
-● Tilt 3D. Make your text and photos tilted.
+
+- New design for online templates.
+- More frames in shapes.
+- Tilt 3D. Make your text and photos tilted.
 
 ### 1.8
-● Save As PDF. Now save and print your design as PDF with crisp and clean pixels.
-● Harf formatting added for color, gradient, font for single word.
-● Improvement in Text Arc (circular text).
+- Save As PDF. Now save and print your design as PDF with crisp and clean pixels.
+- Harf formatting added for color, gradient, font for single word.
+- Improvement in Text Arc (circular text).
 
 ### 1.8
-● Save As PDF. Now save and print your design as PDF with crisp and clean pixels.
-● Harf formatting added for color, gradient, font for single word.
-● Improvement in Text Arc (circular text).
+- Save As PDF. Now save and print your design as PDF with crisp and clean pixels.
+- Harf formatting added for color, gradient, font for single word.
+- Improvement in Text Arc (circular text).
 
 ### 1.7.1
 - Spread creativity: Export, share and import your Imagitor project.
