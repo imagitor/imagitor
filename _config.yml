@@ -33,29 +33,49 @@ youtube_username                          : imagitor
 # Feature List                            Edit, add or remove features to be presented.
 features                                  :
 
-  - title                                 : Large Collection of Urdu Fonts
-    description                           : Have access to our collection of stylish Urdu fonts.
+  - title                                 : Harf Settings
+    description                           : Touch your words. Move them wherever you want. Beautify your headings, poetry or any text with custom font, color or shadow for words.
+    fontawesome_icon_name                 : microscope
+
+  - title                                 : Thumbnail maker
+    description                           : Easily make youtube thumbnails yourself or quickly edit from online templates.
+    fontawesome_icon_name                 : youtube
+    
+  - title                                 : Online Templates
+    description                           : Quickly edit from large collection of online templates for social media post, thumbnail, quotes, flyers or poetry.
+    fontawesome_icon_name                 : file
+    
+  - title                                 : Layer order, hide, copy or delete
+    description                           : Easily manipulate, duplicate, hide or delete from canvas through a single screen.
+    fontawesome_icon_name                 : stream
+
+  - title                                 : Online photos and stickers
+    description                           : Search and select from large royalty free collection of photos and sticker.
+    fontawesome_icon_name                 : images
+    
+  - title                                 : Vector Shapes
+    description                           : Imagitor comes with easy tools to create, edit and modify vector shapes.
+    fontawesome_icon_name                 : shapes
+
+  - title                                 : Large Collection of Urdu and Google Fonts
+    description                           : Have access to our collection of stylish Urdu fonts. Huge Google Fonts Collection is also included.
     fontawesome_icon_name                 : font
+    
+  - title                                 : Embellish and Enhance
+    description                           : Imagitor comes with easy-to-use editing tools to help you make the text look amazing
+    fontawesome_icon_name                 : microscope
     
   - title                                 : Beautify your text with many Text Effects
     description                           : Make your text stand out with dozens of text effects like Gradients, Shadow, Stroke, Background
     fontawesome_icon_name                 : magic
     
   - title                                 : Sayt it with expressive Stickers and Shapes
-    description                           : Add stickers, emojis, shapes, as you want
+    description                           : Add stickers, emojis, shapes, as you want from large online collection.
     fontawesome_icon_name                 : star
-    
-  - title                                 : Create your social media Logo
-    description                           : With stickers, shapes and text, create your own professional logo
-    fontawesome_icon_name                 : shapes
-
+  
   - title                                 : Save your works as Project
     description                           : Create a master piece and save it as project for future editions.
     fontawesome_icon_name                 : save
-    
-  - title                                 : Embellish and Enhance
-    description                           : Urdu Editor comes with easy-to-use editing tools to help you make the text look amazing
-    fontawesome_icon_name                 : microscope
 
   - title                                 : Format Urdu Like a Pro!
     description                           : Experiment with many fonts, dozen colors, size and border to create artful effects for your Urdu text.
