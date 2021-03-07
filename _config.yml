@@ -39,8 +39,12 @@ features                                  :
 
   - title                                 : Thumbnail maker
     description                           : Easily make youtube thumbnails yourself or quickly edit from online templates.
-    fontawesome_icon_name                 : youtube
-    
+    fontawesome_icon_name                 : video
+
+  - title                                 : Logo Maker
+    description                           : Choose from large logo collection or create your own logo with creative tools.
+    fontawesome_icon_name                 : vector-square
+
   - title                                 : Online Templates
     description                           : Quickly edit from large collection of online templates for social media post, thumbnail, quotes, flyers or poetry.
     fontawesome_icon_name                 : file
