@@ -5,61 +5,62 @@ include_in_header: false
 ---
 
 # Changelog
-Here you can keep a changelog for your app. Edit the markdown based CHANGELOG.md which is located in the _pages directory. The changelog below is simply an example changelog that serves to exemplify how the markdown can be used. You can be as creative as you want with the markdown.
 
 <br>
+### 1.8.3
+● New design for online templates.
+● More frames in shapes.
+● Tilt 3D. Make your text and photos tilted.
 
-### `Latest`
-# **Version 2.0**
-This is the first update to our app. Jeez **goodness** by kept more sensually a much far proper exotically precise [here is a link](https://www.google.com) and and illicit hey uninspiring the more sat honey knelt before before bearish bowed lorikeet wolf grandly instead diligently and rhinoceros imperative.
+### 1.8
+● Save As PDF. Now save and print your design as PDF with crisp and clean pixels.
+● Harf formatting added for color, gradient, font for single word.
+● Improvement in Text Arc (circular text).
 
-#### What's New
-- Much far proper exotically precise unaccountable.
-- [Changes to Privacy Policy](/privacypolicy)
+### 1.8
+● Save As PDF. Now save and print your design as PDF with crisp and clean pixels.
+● Harf formatting added for color, gradient, font for single word.
+● Improvement in Text Arc (circular text).
 
-#### Bug Fixes
-- Much far proper exotically precise unaccountable.
-- [Changes to Privacy Policy](/privacypolicy)
+### 1.7.1
+- Spread creativity: Export, share and import your Imagitor project.
+- Stay safe: make backup, export all your projects or import all your projects from backup. [Premium Feature]
+- Fix issue in shadow overlapping texts.
+Previous versions:
+- Choose font from large Google font collection.
+- Text Texture: Beautify your text with texture patterns.
+- One video ad watch will remove watermark for 10 mins.
 
-<br>
+### 1.6.7
+- Spread creativity, Export and Import your Imagitor project.
+- Fixes a bug in cut photo, where photo height was larger.
 
-### **Version 2.1**
-Abnormal and formidable against much the before well improper more spent far heron amicably iguana plainly swanky upon mammoth **much paid darn some tapir** some glared save crud more regarding one accommodating gosh cannily and on hungry a more goodness inside merry yikes wedded versus because some a a a shined anteater goldfinch jeez up so and this this a.
+#### 1.6.5.X
+- Choose font from large Google font collection.
+- Text Texture: Beautify your text with texture patterns.
+- One video ad watch will remove watermark for 10 mins.
+- Move Imagitor data to internal or external storage.
+- Better slider for size, margin, rotate and text arc.
 
-#### What's New
-- Much far proper exotically precise unaccountable.
-- Much far proper exotically precise unaccountable.
+#### 1.6.5.1
+- Move and align layers with bottom slider in Size option (X, Y option).
+- Crash fixed when canceling the crop for online photo in text pattern.
+- Some text style were showing wrong, that has been fixed.
+- Bug fixes and performance improvement.
 
-<br>
+### 1.6.5
+- Text Texture: Beautify your text with texture patterns.
+- Better color picker option to quickly pick text color, gradient, texture or drop-pick.
+- Better slider for size, rotate and text arc values.
 
-________
-<br>
-
-### `Initial Release`
-# **Version 1.0**
-Cracked a more and iguana a without some echidna a abnormal hello and beat thanks jeepers gnu jeepers until up depending for drooled awfully angelfish relentless much a well wasp some in impala darn and overate greedily wow kookaburra beneath much wistful fluid until and lemming less armadillo redoubtable after much capybara wow that hence interbred timorous loosely oh divisively wherever because jeepers until since as that goodness roadrunner insanely belated physic jeepers hey jeepers much the beside steadfastly up toward indubitably this goodness playful.
-
-<br>
-
-## **Version 1.1**
-Abnormal and formidable against much the before well improper more spent far heron amicably iguana plainly swanky upon mammoth **much paid darn some tapir** some glared save crud more regarding one accommodating gosh cannily and on hungry a more goodness inside merry yikes wedded versus because some a a a shined anteater goldfinch jeez up so and this this a.
-
-#### What's New
-- Much far proper exotically precise unaccountable.
-- Much far proper exotically precise unaccountable.
-
-<br>
-
-## Version 1.0.1
-That wow robin one and gosh audibly darn that variously less across softly awakened under affectingly wildebeest from jeepers far contemplated and indisputably clung jeepers much mistaken some after mumbled hey certain neatly far alas more trod the swelled rolled permissively so save pert the tapir paradoxical off so then juggled crud a however overslept vehemently kept indisputably anteater walked alas or into.
-
-#### What's New
-- Much far proper exotically precise unaccountable.
-- Much far proper exotically precise unaccountable.
-- Much far proper exotically precise unaccountable.
-
-#### Bug Fixes
-- Improved user sign up experience.
-- Unlike deliberately zebra hen oh jeez understandable. Alas and quit oh snooty unlike deliberately.
+### 1.5.6
+- Online templates just for you.
+- Guidelines for perfect object placement.
+- Layer list, order, hide, lock your objects.
+- Gradient presets for better choices.
+- Make your own gradient color.
+- Round text background, with gradient.
+- Font favorite list.
+- Image, Stickers cropping and masking.
 
 <br>
