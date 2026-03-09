@@ -1,0 +1,22 @@
+---
+layout: null
+---
+# {{ site.page_title }}
+
+{{ site.app_description }}
+
+## About the App
+Name: {{ site.app_name }}
+Category: {{ site.app_price }}
+Platforms: Android, iOS
+Developer: {{ site.your_name }}
+Developer Website: {{ site.your_link }}
+
+## Features
+{% for feature in site.features %}
+- {{ feature.title }}: {{ feature.description }}
+{% endfor %}
+
+## Links
+Play Store: {{ site.playstore_link }}
+App Store: {{ site.appstore_link }}
