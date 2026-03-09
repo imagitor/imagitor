@@ -19,4 +19,4 @@ Developer Website: {{ site.your_link }}
 
 ## Links
 Play Store: {{ site.playstore_link }}
-App Store: {{ site.appstore_link }}
+App Store: {{ https://appsto.re/i6725K2  }}
