@@ -1,5 +1,5 @@
 #page title
-page_title                                :                                           # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
+page_title                                : Imagitor presents Takhleeq AI - Create your designs with AI.
 
 # App Info
 ios_app_id                                : 1207572141                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
@@ -11,8 +11,8 @@ presskit_download_link                    :                                     
 
 app_icon                                  : /assets/appicon.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
 app_name                                  : Imagitor                                          # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_price                                 : Graphic Design App                                          # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_description                           : Imagitor is a free graphic design app to create social media posts, presentations, posters and other content.
+app_price                                 : AI Graphic Design App                                          # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
+app_description                           : Create your designs with AI. Imagitor is a free graphic design app to create social media posts, presentations, posters and other content.
 
 enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
 
@@ -32,6 +32,14 @@ youtube_username                          : imagitor
 
 # Feature List                            Edit, add or remove features to be presented.
 features                                  :
+
+  - title                                 : Vector design with AI
+    description                           : Transform your creative ideas into high-quality designs instantly using advanced AI.
+    fontawesome_icon_name                 : wand-sparkles
+
+  - title                                 : Image designs with AI
+    description                           : Generate stunning visual designs from simple text prompts with high-resolution output.
+    fontawesome_icon_name                 : wand-sparkles
 
   - title                                 : Harf Settings
     description                           : Touch your words. Move them wherever you want. Beautify your headings, poetry or any text with custom font, color or shadow for words.
@@ -71,7 +79,7 @@ features                                  :
     
   - title                                 : Beautify your text with many Text Effects
     description                           : Make your text stand out with dozens of text effects like Gradients, Shadow, Stroke, Background
-    fontawesome_icon_name                 : magic
+    fontawesome_icon_name                 : paint-brush
     
   - title                                 : Sayt it with expressive Stickers and Shapes
     description                           : Add stickers, emojis, shapes, as you want from large online collection.
