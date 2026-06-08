@@ -1,0 +1,28 @@
+---
+layout: page
+title: Blog
+permalink: /blog/
+---
+
+<div class="wrapper" style="max-width: 800px; margin: 0 auto; padding: 40px 20px;">
+    <div class="blog-list">
+        {% for post in site.posts %}
+            <article class="blog-post-card {% if post.lang == 'ur' %}urdu-content{% endif %}" style="margin-bottom: 40px; padding-bottom: 40px; border-bottom: 1px solid #eee;">
+                <h2 style="margin-bottom: 10px;">
+                    <a href="{{ post.url | relative_url }}" style="color: #333; text-decoration: none;">{{ post.title }}</a>
+                </h2>
+                <p class="post-meta" style="color: #666; font-size: 0.9em; margin-bottom: 15px;">
+                    {{ post.date | date: "%B %-d, %Y" }}
+                </p>
+                <div class="post-excerpt" style="color: #555; line-height: 1.5;">
+                    {% if post.excerpt %}
+                        {{ post.excerpt }}
+                    {% else %}
+                        {{ post.content | strip_html | truncatewords: 30 }}
+                    {% endif %}
+                </div>
+                <a href="{{ post.url | relative_url }}" class="read-more" style="display: inline-block; margin-top: 15px; color: {{ site.link_color }}; text-decoration: none; font-weight: 600;">Read More &rarr;</a>
+            </article>
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,6 @@
+# AI Coding Assistant Instructions
+
+- **NEVER use browser subagents to take screenshots or verify the website.** This has caused 100+ minute wasted loops in the past.
+- **NEVER launch browser_subagent for visual verification.** The build log is sufficient. If visual review is needed, ask the user to check.
+- If you need a screenshot of the website, ask the user explicitly to provide one.
+- For verification, rely on `jekyll build` success. Do NOT scroll through pages taking screenshots.

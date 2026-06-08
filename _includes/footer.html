@@ -1,50 +1,44 @@
 <footer>
-	<p class="footerText">Made by {% if site.your_link %}<a href="{{ site.your_link }}">{% endif %}{{ site.your_name }}{% if site.your_link %}</a>{% endif %}{% if site.your_city %} in {{ site.your_city }}{% endif %}</p>
-	<div class="footerIcons">
-
-		{% if site.facebook_username %}
-			<a href="https://facebook.com/{{ site.facebook_username }}">
-				<span class="fa-stack fa-1x">
-					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
-					<i class="socialIconTop fab fa-facebook fa-stack-1x"></i>
-				</span>
+	<div class="footer__inner">
+		<div class="footer__brand">
+			<a href="/" class="logo">
+				<img class="headerIcon" src="/assets/appicon.png" alt="Imagitor">
+				<span class="headerName">{{ site.app_name }}</span>
 			</a>
-		{% endif %}
+			<p class="footer__tagline">Professional design tools for Urdu calligraphy, AI graphics, and everyday creative work. Designed and built in {{ site.your_city }}.</p>
+		</div>
 
-		{% if site.twitter_username %}
-			<a href="https://twitter.com/{{ site.twitter_username }}">
-				<span class="fa-stack fa-1x">
-					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
-					<i class="socialIconTop fab fa-twitter fa-stack-1x"></i>
-				</span>
-			</a>
-		{% endif %}
+		<div class="footer__nav">
+			<h4 class="footer__heading">Links</h4>
+			<ul class="footer__links">
+				{% for page in site.pages %}
+				<li><a href="{{ page.url | relative_url }}" target="_self">{{ page.title }}</a></li>
+				{% endfor %}
+				{% if site.presskit_download_link %}
+				<li><a href="{{ site.presskit_download_link }}">Press Kit</a></li>
+				{% endif %}
+			</ul>
+		</div>
 
-		{% if site.github_username %}
-			<a href="https://github.com/{{ site.github_username }}">
-				<span class="fa-stack fa-1x">
-					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
-					<i class="socialIconTop fab fa-github fa-stack-1x"></i>
-				</span>
-			</a>
-		{% endif %}
-
-		{% if site.email_address %}
-			<a href="mailto:{{ site.email_address }}">
-				<span class="fa-stack fa-1x">
-					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
-					<i class="socialIconTop fas fa-envelope fa-stack-1x"></i>
-				</span>
-			</a>
-		{% endif %}
-
+		<div class="footer__connect">
+			<h4 class="footer__heading">Connect</h4>
+			<div class="footer__social">
+				{% if site.facebook_username %}
+				<a href="https://facebook.com/{{ site.facebook_username }}" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+				{% endif %}
+				{% if site.twitter_username %}
+				<a href="https://twitter.com/{{ site.twitter_username }}" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+				{% endif %}
+				{% if site.email_address %}
+				<a href="mailto:{{ site.email_address }}" aria-label="Email"><i class="fas fa-envelope"></i></a>
+				{% endif %}
+				<a href="https://instagram.com/imagitor" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+				<a href="https://youtube.com/c/imagitor" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+			</div>
+		</div>
 	</div>
-	<div class="footerLinks">
-		{% for page in site.pages %}
-			<a href="{{ page.url | relative_url }}" target="_self">{{ page.title }}</a>
-		{% endfor %}
-		{% if site.presskit_download_link %}
-			<a href="{{ site.presskit_download_link }}">Press Kit</a>
-		{% endif %}
+
+	<div class="footer__bottom">
+		<p>© {{ 'now' | date: "%Y" }} {% if site.your_link %}<a href="{{ site.your_link }}">{{ site.your_name }}</a>{% else %}{{ site.your_name }}{% endif %}. All rights reserved.</p>
 	</div>
 </footer>

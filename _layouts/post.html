@@ -1,0 +1,64 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+
+{% include head.html %}
+
+<body class="subPageBody">
+    {% include header.html %}
+
+    <main class="page-content" style="padding-top: 100px; padding-bottom: 60px;">
+        <article class="page-article wrapper {% if page.lang == 'ur' %}urdu-content{% endif %}" style="max-width: 800px; margin: 0 auto; padding: 0 20px;">
+            <header class="post-header" style="margin-bottom: 40px; text-align: center;">
+                <h1 class="page-article__title" style="margin-bottom: 10px;">{{ page.title }}</h1>
+                <p class="post-meta" style="color: #666; font-size: 0.9em;">
+                    <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                        {{ page.date | date: "%B %-d, %Y" }}
+                    </time>
+                </p>
+                {% if page.translation_id %}
+                {% assign translations = site.posts | where: "translation_id", page.translation_id %}
+                {% if translations.size > 1 %}
+                <div class="lang-switcher" style="margin-top: 15px; display: flex; gap: 10px; justify-content: center;">
+                    {% for t in translations %}
+                        {% assign lang_name = t.lang | upcase %}
+                        {% if t.lang == 'en' %}{% assign lang_name = 'English' %}{% endif %}
+                        {% if t.lang == 'ur' %}{% assign lang_name = 'اردو' %}{% endif %}
+
+                        {% if t.url == page.url %}
+                        <span style="padding: 5px 15px; border-radius: 20px; background-color: #007bff; color: white; font-weight: bold; font-size: 0.9em;">{{ lang_name }}</span>
+                        {% else %}
+                        <a href="{{ t.url }}" style="padding: 5px 15px; border-radius: 20px; border: 1px solid #007bff; color: #007bff; text-decoration: none; font-size: 0.9em;">{{ lang_name }}</a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                {% endif %}
+                {% endif %}
+            </header>
+
+            <div class="post-content e-content" itemprop="articleBody" style="line-height: 1.6; font-size: 1.1em; color: #333;">
+                <style>
+                    .post-content img {
+                        max-width: 100%;
+                        height: auto;
+                        border-radius: 8px;
+                        margin: 20px 0;
+                        display: block;
+                    }
+                </style>
+                {{ content }}
+            </div>
+            
+            <div class="post-footer" style="margin-top: 60px; padding-top: 20px; border-top: 1px solid #eee;">
+                <a href="/blog/" style="color: {{ site.link_color }}; text-decoration: none; font-weight: 600;">&larr; Back to Blog</a>
+            </div>
+        </article>
+    </main>
+
+    {% include footer.html %}
+</body>
+
+</html>

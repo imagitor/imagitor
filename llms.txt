@@ -19,4 +19,9 @@ Developer Website: {{ site.your_link }}
 
 ## Links
 Play Store: {{ site.playstore_link }}
-App Store: {{ https://appsto.re/i6725K2  }}
+App Store: https://appsto.re/i6725K2
+
+## FAQs
+{% for faq in site.faqs %}
+- **{{ faq.question }}**: {{ faq.answer }}
+{% endfor %}

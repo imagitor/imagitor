@@ -4,64 +4,872 @@
 {% include head.html %}
 
 <body>
-    <div class="imageWrapper">
-            <div class="headerBackground">
-                <div class="container">
-                    {% include header.html %}
-                    <div class="iphonePreview">
+    {% include header.html %}
 
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 0 0" style="position: absolute;">
-                            <clipPath id="screenMask" clipPathUnits="objectBoundingBox" transform="scale(0.00257, 0.00119)">
-                                <path d="M6490.24,1234.36H6216.28c-2.57,0-10.55-.07-12.07-0.07a87.524,87.524,0,0,1-12-1.03,40.051,40.051,0,0,1-11.4-3.79,38.315,38.315,0,0,1-16.82-16.84,39.948,39.948,0,0,1-3.78-11.42,72.257,72.257,0,0,1-1.04-12.02c-0.06-1.83-.06-5.56-0.06-5.56V452.125h0s0.06-11.391.06-12.086a87.9,87.9,0,0,1,1.04-12.025,39.843,39.843,0,0,1,3.78-11.413,38.283,38.283,0,0,1,16.82-16.847,39.762,39.762,0,0,1,11.4-3.785,71.909,71.909,0,0,1,12-1.037c16.99-.567,36.32-0.061,34.51-0.061,5.02,0,6.5,3.439,6.63,6.962a35.611,35.611,0,0,0,1.2,8.156,21.326,21.326,0,0,0,19.18,15.592c2.28,0.192,6.78.355,6.78,0.355H6433.7s4.5-.059,6.79-0.251a21.348,21.348,0,0,0,19.18-15.591,35.582,35.582,0,0,0,1.19-8.154c0.13-3.523,1.61-6.962,6.64-6.962-1.81,0,17.52-.5,34.5.061a71.923,71.923,0,0,1,12.01,1.038,39.832,39.832,0,0,1,11.4,3.784,38.283,38.283,0,0,1,16.82,16.844,40.153,40.153,0,0,1,3.78,11.413,87.844,87.844,0,0,1,1.03,12.023c0,0.695.06,12.084,0.06,12.084h0V1183.64s0,3.72-.06,5.55a72.366,72.366,0,0,1-1.03,12.03,40.2,40.2,0,0,1-3.78,11.41,38.315,38.315,0,0,1-16.82,16.84,40.155,40.155,0,0,1-11.4,3.79,87.669,87.669,0,0,1-12.01,1.03c-1.52,0-9.5.07-12.07,0.07" transform="translate(-6159.12 -394.656)"/>
-                            </clipPath>
-                        </svg>
+    <main class="landing-page">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero__content">
 
-                        <div class="videoContainer hidden">
-                            <video class="screenvideo" autoplay="autoplay" controls="controls">
-                            </video>
-                        </div>  
-                        
-                        <img class="iphoneScreen hidden" src="" alt="">
-
-                        {% include screencontent.html %}
-
-                    </div>
-                    <div class="appInfo">
-                        <div class="appIconShadow">
-                            <svg width="0" height="0">
-                                <defs>
-                                    <clipPath id="shape120">
-                                        <path id="shape" class="cls-1" d="M6821,495.533v-4.281c0-1.2-.04-2.4-0.04-3.642a57.7,57.7,0,0,0-.68-7.882,26.144,26.144,0,0,0-2.48-7.483,25.115,25.115,0,0,0-11.04-11.044,26.118,26.118,0,0,0-7.49-2.481,47.28,47.28,0,0,0-7.88-.68c-1.2-.04-2.4-0.04-3.64-0.04h-53.5c-1.2,0-2.4.04-3.64,0.04a57.813,57.813,0,0,0-7.88.68,26.323,26.323,0,0,0-7.49,2.481,25.115,25.115,0,0,0-11.04,11.044,26.144,26.144,0,0,0-2.48,7.483,47.313,47.313,0,0,0-.68,7.882c-0.04,1.2-.04,2.4-0.04,3.642v53.5c0,1.2.04,2.4,0.04,3.641a57.7,57.7,0,0,0,.68,7.883,26.137,26.137,0,0,0,2.48,7.482,25.115,25.115,0,0,0,11.04,11.044,26.261,26.261,0,0,0,7.49,2.481,47.28,47.28,0,0,0,7.88.68c1.2,0.04,2.4.04,3.64,0.04h53.5c1.2,0,2.4-.04,3.64-0.04a57.654,57.654,0,0,0,7.88-.68,26.057,26.057,0,0,0,7.49-2.481,25.115,25.115,0,0,0,11.04-11.044,26.137,26.137,0,0,0,2.48-7.482,47.316,47.316,0,0,0,.68-7.883c0.04-1.2.04-2.4,0.04-3.641V495.533h0Z" transform="translate(-6701 -458)" filter="url(#f1)"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <img class="appIconLarge" src="{{ site.app_icon }}">
-                        </div>
-                        <div class="appNamePriceContainer">
-                            <h1 class="appName">
-                                {{ site.app_name }}
-                            </h1>
-                            <h2 class="appPrice">
-                                {{ site.app_price }}
-                            </h2>
-                        </div>
-                        <div class="appDescriptionContainer">
-                            <p class ="appDescription">
-                                {{ site.app_description }}
-                            </p>
-                        </div>
-                        <div class="downloadButtonsContainer">
-                            {% if site.playstore_link %}
-                                <a class="playStoreLink" href="{{site.playstore_link}}"><img class="playStore" src="assets/playstore.png"></a>
-                            {% endif %}
-                            <a class="appStoreLink" href="{{site.appstore_link}}"><img class="appStore" src="assets/appstore.png"></a>
-                        </div>
-                    </div>
-                    {% include features.html %}
-                    {% include footer.html %}
-                    {% include appstoreimages.html %}
+                <h1 class="hero__title">A complete studio for all your creative work.</h1>
+                <p class="hero__lead">Professional Urdu calligraphy, AI-assisted design, and precision vector tools —
+                    unified in a single mobile canvas built for serious creators.</p>
+                <div class="hero__ctas">
+                    <a href="{{site.playstore_link}}" target="_self"><img src="assets/playstore.png"
+                            alt="Get it on Google Play" class="store-badge"></a>
+                    <a href="https://apps.apple.com/app/id{{site.ios_app_id}}" target="_self"><img
+                            src="assets/appstore.png" alt="Download on the App Store" class="store-badge"></a>
                 </div>
             </div>
-        </div>
+            <div class="hero__visual">
+                <div class="phone-mockup">
+                    <img src="assets/screenshot/imagitor_urdu_editor.jpg" alt="Imagitor Workspace">
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof -->
+        <section class="social-proof">
+            <div class="social-proof__stat scroll-reveal">
+                <div class="social-proof__number" data-count="1000000">0</div>
+                <div class="social-proof__label">Downloads</div>
+            </div>
+            <div class="social-proof__stat scroll-reveal">
+                <div class="social-proof__number" data-count="4.5" data-decimal="true">0</div>
+                <div class="social-proof__label">Rating on Play Store</div>
+            </div>
+            <div class="social-proof__stat scroll-reveal">
+                <div class="social-proof__number" data-count="50000">0</div>
+                <div class="social-proof__label">Reviews</div>
+            </div>
+        </section>
+
+        <!-- Section 1: Design -->
+        <section id="design" class="section section--design">
+            <div class="wrapper">
+                <header class="section__header">
+                    <div class="section__badge scroll-reveal">Design</div>
+                    <h2 class="section__title scroll-reveal">Design without distractions</h2>
+                    <p class="section__blurb scroll-reveal">Focused tools, a refined interface, and an infinite mobile
+                        canvas — engineered to keep you in your creative flow.</p>
+                </header>
+
+                <div class="section__grid">
+                    <!-- Typography -->
+                    <div class="item item--double-width item--has-selection-box scroll-reveal">
+                        <div class="item__inner">
+
+                            <h3 class="item__title">Complete typographic control.</h3>
+                            <p class="item__blurb">Shape every letter with Urdu calligraphy, custom strokes, and refined
+                                text gradients.</p>
+                            <img class="item__asset item__asset--device"
+                                src="assets/screenshot/imagitor-harf-settings.png" alt="Total typography control">
+                        </div>
+                        <div class="sketch-selection-box">
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-top-left"></div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-top-right">
+                            </div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-bottom-left">
+                            </div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-bottom-right">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Vectors -->
+                    <div class="item item--upside-down item--has-selection-box scroll-reveal">
+                        <div class="item__inner">
+
+                            <h3 class="item__title">Precision vector editing.</h3>
+                            <p class="item__blurb">Draw and refine vector paths with full control over anchor points and
+                                curves.</p>
+                            <img class="item__asset item__asset--screen item__asset--zoom"
+                                src="assets/screenshot/imagitor-vector-editing.png" alt="Master your vectors">
+                        </div>
+                        <div class="sketch-selection-box">
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-top-left"></div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-top-right">
+                            </div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-bottom-left">
+                            </div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-bottom-right">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tables -->
+                    <div class="item item--has-selection-box scroll-reveal">
+                        <div class="item__inner">
+
+                            <h3 class="item__title">Organize with precision.</h3>
+                            <p class="item__blurb">Build clean, data-driven tables — import content, style borders, and
+                                format cells with ease.</p>
+                            <div class="css-export-mockup">
+                                <div class="css-table-toolbar">
+                                    <div class="css-table-toolbar-item"><i class="fas fa-plus"></i><span>Add Col</span>
+                                    </div>
+                                    <div class="css-table-toolbar-item"><i class="fas fa-palette"></i><span>Table
+                                            Style</span></div>
+                                    <div class="css-table-toolbar-item"><i class="fas fa-arrows-alt-v"></i><span>Row
+                                            Height</span></div>
+                                    <div class="css-table-toolbar-item"><i class="fas fa-sync-alt"></i><span>Flip</span>
+                                    </div>
+                                    <div class="css-table-toolbar-item"><i class="fas fa-align-justify"></i><span>Row
+                                            Format</span></div>
+                                    <div class="css-table-toolbar-item"><i class="fas fa-font"></i><span>Type</span>
+                                    </div>
+                                </div>
+                                <div class="css-export-phone">
+                                    <div class="css-table-container" dir="rtl">
+                                        <div class="css-table-title">مزے دار پیزا ترکیب</div>
+                                        <div class="css-table-grid">
+                                            <div class="css-table-row">
+                                                <div class="css-table-cell">اجزاء</div>
+                                                <div class="css-table-cell">مقدار</div>
+                                                <div class="css-table-cell">کیلوریز</div>
+                                            </div>
+                                            <div class="css-table-row">
+                                                <div class="css-table-cell">پیزا ڈو</div>
+                                                <div class="css-table-cell">1 عدد</div>
+                                                <div class="css-table-cell">200</div>
+                                            </div>
+                                            <div class="css-table-row">
+                                                <div class="css-table-cell">ٹماٹر ساس</div>
+                                                <div class="css-table-cell">2 چمچ</div>
+                                                <div class="css-table-cell">50</div>
+                                            </div>
+                                            <div class="css-table-row">
+                                                <div class="css-table-cell">پنیر</div>
+                                                <div class="css-table-cell">1 کپ</div>
+                                                <div class="css-table-cell">400</div>
+                                            </div>
+                                            <div class="css-table-row">
+                                                <div class="css-table-cell">پیپرونی</div>
+                                                <div class="css-table-cell">10 ٹکڑے</div>
+                                                <div class="css-table-cell">150</div>
+                                            </div>
+                                            <div class="css-table-row">
+                                                <div class="css-table-cell">زیتون</div>
+                                                <div class="css-table-cell">تھوڑے سے</div>
+                                                <div class="css-table-cell">20</div>
+                                            </div>
+                                        </div>
+                                        <div class="css-table-instructions">200 ڈگری پر 15 منٹ تک بیک کریں۔</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sketch-selection-box">
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-top-left"></div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-top-right">
+                            </div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-bottom-left">
+                            </div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-bottom-right">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Canvas -->
+                    <div class="item item--has-selection-box scroll-reveal">
+                        <div class="item__inner">
+
+                            <h3 class="item__title">Organized layer management.</h3>
+                            <p class="item__blurb">Arrange, lock, and group every element from a single, intuitive layer
+                                list.</p>
+                            <img class="item__asset item__asset--screen item__asset--zoom"
+                                src="assets/screenshot/app-screen-layers.jpg" alt="Manage your canvas">
+                        </div>
+                        <div class="sketch-selection-box">
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-top-left"></div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-top-right">
+                            </div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-bottom-left">
+                            </div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-bottom-right">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gradients -->
+                    <div class="item item--double-width item--has-selection-box scroll-reveal">
+                        <div class="item__inner">
+
+                            <h3 class="item__title">Color choices &amp; gradients.</h3>
+                            <p class="item__blurb">Pick dynamic colors and apply stunning radial or linear gradients to
+                                your designs.</p>
+                            <div class="css-export-mockup">
+                                <div class="css-export-pill" style="top: 15%; left: 5%;"><i
+                                        class="fas fa-eye-dropper"></i><span>Color Picker</span></div>
+                                <div class="css-export-pill" style="top: 35%; right: 5%;"><i
+                                        class="fas fa-palette"></i><span>Hex Color</span></div>
+                                <div class="css-export-pill" style="top: 55%; left: 0%;"><i
+                                        class="fas fa-magic"></i><span>Gradient Presets</span></div>
+                                <div class="css-export-pill" style="top: 75%; right: 0%;"><i
+                                        class="fas fa-plus"></i><span>Create Gradient</span></div>
+                                <div class="css-export-pill" style="bottom: 5%; left: 15%;"><i
+                                        class="fas fa-grip-lines"></i><span>Linear Gradients</span></div>
+                                <div class="css-export-pill" style="bottom: -15px; right: 25%;"><i
+                                        class="fas fa-circle-notch"></i><span>Radial Gradients</span></div>
+                                <div class="css-export-phone">
+                                    <div class="css-gradient-grid">
+                                        <div class="css-gradient-swatch"
+                                            style="background: linear-gradient(135deg, #FF9A9E 0%, #FECFEF 100%);">
+                                        </div>
+                                        <div class="css-gradient-swatch"
+                                            style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);">
+                                        </div>
+                                        <div class="css-gradient-swatch"
+                                            style="background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);">
+                                        </div>
+                                        <div class="css-gradient-swatch"
+                                            style="background: linear-gradient(135deg, #fccb90 0%, #d57eeb 100%);">
+                                        </div>
+                                        <div class="css-gradient-swatch"
+                                            style="background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);">
+                                        </div>
+                                        <div class="css-gradient-swatch"
+                                            style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                                        </div>
+                                        <div class="css-gradient-swatch"
+                                            style="background: radial-gradient(circle, #5ee7df 0%, #b490ca 100%);">
+                                        </div>
+                                        <div class="css-gradient-swatch"
+                                            style="background: radial-gradient(circle, #d299c2 0%, #fef9d7 100%);">
+                                        </div>
+                                        <div class="css-gradient-swatch"
+                                            style="background: linear-gradient(135deg, #ebedee 0%, #fdfbfb 100%);">
+                                        </div>
+                                        <div class="css-gradient-swatch"
+                                            style="background: linear-gradient(135deg, #cfd9df 0%, #e2ebf0 100%);">
+                                        </div>
+                                        <div class="css-gradient-swatch"
+                                            style="background: radial-gradient(circle, #f6d365 0%, #fda085 100%);">
+                                        </div>
+                                        <div class="css-gradient-swatch"
+                                            style="background: linear-gradient(135deg, #96fbc4 0%, #f9f586 100%);">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sketch-selection-box">
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-top-left"></div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-top-right">
+                            </div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-bottom-left">
+                            </div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-bottom-right">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Alignment -->
+                    <div class="item item--has-selection-box scroll-reveal">
+                        <div class="item__inner">
+
+                            <h3 class="item__title">Align with confidence.</h3>
+                            <p class="item__blurb">Snap text and elements to dynamic guides for pixel-perfect balance
+                                and spacing.</p>
+                            <img class="item__asset item__asset--screen item__asset--contain"
+                                src="assets/screenshot/grid_snapping_mockup.png" alt="Align with confidence">
+                        </div>
+                        <div class="sketch-selection-box">
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-top-left"></div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-top-right">
+                            </div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-bottom-left">
+                            </div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-bottom-right">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: AI & Prototyping -->
+        <section id="ai" class="section section--prototype">
+            <div class="wrapper">
+                <header class="section__header">
+                    <div class="section__badge scroll-reveal">AI Tools</div>
+                    <h2 class="section__title scroll-reveal">Describe it. Generate it. Refine it.</h2>
+                    <p class="section__blurb scroll-reveal">Remove backgrounds in a single tap, generate original
+                        graphics from a text prompt, and bring your ideas to life in less time.</p>
+                </header>
+
+                <div class="section__grid">
+                    <!-- Takhleeq AI -->
+                    <div class="item item--double-width item--has-selection-box scroll-reveal">
+                        <div class="item__inner">
+
+                            <h3 class="item__title">Takhleeq AI Studio.</h3>
+                            <p class="item__blurb">Generate refined Urdu graphics and greeting cards from a simple text
+                                description.</p>
+                            <img class="item__asset item__asset--screen item__asset--contain"
+                                src="assets/screenshot/takhleeq_ai_mockup.png" alt="Takhleeq AI">
+                        </div>
+                        <div class="sketch-selection-box">
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-top-left"></div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-top-right">
+                            </div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-bottom-left">
+                            </div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-bottom-right">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Background Remover -->
+                    <div class="item item--double-width item--has-selection-box scroll-reveal">
+                        <div class="item__inner">
+
+                            <h3 class="item__title">Instant background removal.</h3>
+                            <p class="item__blurb">Isolate any subject in a single tap with AI-powered background
+                                removal — ideal for collages, logos, and clean compositions.</p>
+                            <img class="item__asset item__asset--screen item__asset--zoom"
+                                src="assets/screenshot/app-screen-rem-bg.jpeg" alt="Remove backgrounds like magic">
+                        </div>
+                        <div class="sketch-selection-box">
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-top-left"></div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-top-right">
+                            </div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-bottom-left">
+                            </div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-bottom-right">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Assets & Inspiration -->
+        <section id="assets" class="section section--assets">
+            <div class="wrapper">
+                <header class="section__header">
+                    <div class="section__badge scroll-reveal">Assets</div>
+                    <h2 class="section__title scroll-reveal">A complete creative library</h2>
+                    <p class="section__blurb scroll-reveal">Accelerate your workflow with an extensive collection of
+                        templates, vector shapes, logos, and calligraphic elements — then export in high resolution
+                        across multiple formats.</p>
+                </header>
+
+                <div class="section__grid">
+                    <!-- Templates -->
+                    <div class="item item--has-selection-box scroll-reveal">
+                        <div class="item__inner">
+
+                            <h3 class="item__title">Start from a template.</h3>
+                            <p class="item__blurb">Begin with fully customizable templates for flyers, social posts, and
+                                more.</p>
+                            <img class="item__asset item__asset--device item__asset--top-align"
+                                src="assets/screenshot/professional-templates.png" alt="Endless inspiration">
+                        </div>
+                        <div class="sketch-selection-box">
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-top-left"></div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-top-right">
+                            </div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-bottom-left">
+                            </div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-bottom-right">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Branding -->
+                    <div class="item item--has-selection-box scroll-reveal">
+                        <div class="item__inner">
+
+                            <h3 class="item__title">Craft your brand.</h3>
+                            <p class="item__blurb">Design vector logos, emblems, and icons using flexible shapes and
+                                custom strokes.</p>
+                            <img class="item__asset item__asset--device item__asset--top-align"
+                                src="assets/screenshot/imagitor-logo-collection.png" alt="Craft your brand">
+                        </div>
+                        <div class="sketch-selection-box">
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-top-left"></div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-top-right">
+                            </div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-bottom-left">
+                            </div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-bottom-right">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Assets -->
+                    <div class="item item--has-selection-box scroll-reveal">
+                        <div class="item__inner">
+
+                            <h3 class="item__title">Organized assets.</h3>
+                            <p class="item__blurb">Access shapes, calligraphy, and media from a neatly organized
+                                library.</p>
+                            <img class="item__asset item__asset--device item__asset--top-align"
+                                src="assets/screenshot/assets_drawer_mockup.png" alt="Give graphics a home">
+                        </div>
+                        <div class="sketch-selection-box">
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-top-left"></div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-top-right">
+                            </div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-bottom-left">
+                            </div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-bottom-right">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Export -->
+                    <div class="item item--has-selection-box scroll-reveal">
+                        <div class="item__inner">
+
+                            <h3 class="item__title">Export without limits.</h3>
+                            <p class="item__blurb">Export your work in high-resolution JPG, PNG, and PDF formats.</p>
+                            <div class="css-export-mockup">
+                                <div class="css-export-pill css-export-pill--png">Save as PNG</div>
+                                <div class="css-export-pill css-export-pill--pdf">Save as PDF</div>
+                                <div class="css-export-pill css-export-pill--jpg">Save as JPG</div>
+                                <div class="css-export-pill css-export-pill--logo">Save as Logo</div>
+                                <div class="css-export-pill css-export-pill--project">Save as Project</div>
+                                <div class="css-export-pill css-export-pill--slider">
+                                    <div class="css-slider-track">
+                                        <div class="css-slider-thumb"></div>
+                                    </div>
+                                    <span>JPG Export Quality</span>
+                                </div>
+                                <div class="css-export-phone">
+                                    <div class="css-export-cv">
+                                        <div class="css-cv-header">
+                                            <div class="css-cv-avatar"></div>
+                                            <div class="css-cv-title-group">
+                                                <div class="css-cv-line css-cv-line--title"></div>
+                                                <div class="css-cv-line css-cv-line--subtitle"></div>
+                                            </div>
+                                        </div>
+                                        <div class="css-cv-section">
+                                            <div class="css-cv-line css-cv-line--heading"></div>
+                                            <div class="css-cv-line"></div>
+                                            <div class="css-cv-line css-cv-line--short"></div>
+                                        </div>
+                                        <div class="css-cv-section">
+                                            <div class="css-cv-line css-cv-line--heading"></div>
+                                            <div class="css-cv-line"></div>
+                                            <div class="css-cv-line"></div>
+                                            <div class="css-cv-line css-cv-line--short"></div>
+                                        </div>
+                                        <div class="css-cv-section">
+                                            <div class="css-cv-line css-cv-line--heading"></div>
+                                            <div class="css-cv-line"></div>
+                                            <div class="css-cv-line css-cv-line--short"></div>
+                                        </div>
+                                        <div class="css-cv-section">
+                                            <div class="css-cv-line css-cv-line--heading"></div>
+                                            <div class="css-cv-line"></div>
+                                            <div class="css-cv-line"></div>
+                                            <div class="css-cv-line css-cv-line--short"></div>
+                                        </div>
+                                        <div class="css-cv-section">
+                                            <div class="css-cv-line css-cv-line--heading"></div>
+                                            <div class="css-cv-line"></div>
+                                            <div class="css-cv-line"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sketch-selection-box">
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-top-left"></div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-top-right">
+                            </div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-bottom-left">
+                            </div>
+                            <div class="sketch-selection-box__inner-box sketch-selection-box__inner-box-bottom-right">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Templates Slider Section -->
+        <section class="section section--templates-slider">
+            <div class="wrapper">
+                <header class="section__header section__header--centered">
+                    <h2 class="section__title">Start with a template. Create anything.</h2>
+                    <div class="slider-nav">
+                        <button class="slider-nav__button slider-nav__button--prev" aria-label="Previous Slide">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-nav__button slider-nav__button--next" aria-label="Next Slide">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </header>
+
+                <div class="templates-slider">
+                    <!-- Flyer Item -->
+                    <div class="slider-item">
+                        <span class="slider-item__type">Flyers</span>
+                        <div class="slider-item__spacer"></div>
+                        <img class="slider-item__img" src="assets/categories/flyers.png" alt="Flyers">
+                    </div>
+                    <!-- Logos Item -->
+                    <div class="slider-item">
+                        <span class="slider-item__type">Logos</span>
+                        <div class="slider-item__spacer"></div>
+                        <img class="slider-item__img" src="assets/categories/logos.png" alt="Logos">
+                    </div>
+                    <!-- Cards Item -->
+                    <div class="slider-item">
+                        <span class="slider-item__type">Cards</span>
+                        <div class="slider-item__spacer"></div>
+                        <img class="slider-item__img" src="assets/categories/cards.png" alt="Cards">
+                    </div>
+                    <!-- Islamic Posts Item -->
+                    <div class="slider-item">
+                        <span class="slider-item__type">Islamic Posts</span>
+                        <div class="slider-item__spacer"></div>
+                        <img class="slider-item__img" src="assets/categories/islamic.png" alt="Islamic Posts">
+                    </div>
+                    <!-- Quotes Item -->
+                    <div class="slider-item">
+                        <span class="slider-item__type">Quotes</span>
+                        <div class="slider-item__spacer"></div>
+                        <img class="slider-item__img" src="assets/categories/quotes.png" alt="Quotes">
+                    </div>
+                    <!-- YouTube Thumbnail Item -->
+                    <div class="slider-item">
+                        <span class="slider-item__type">Youtube Thumb</span>
+                        <div class="slider-item__spacer"></div>
+                        <img class="slider-item__img" src="assets/categories/youtube.png" alt="Youtube Thumb">
+                    </div>
+                    <!-- Social Media Posts Item -->
+                    <div class="slider-item">
+                        <span class="slider-item__type">Social Media Posts</span>
+                        <div class="slider-item__spacer"></div>
+                        <img class="slider-item__img" src="assets/categories/social.png" alt="Social Media Posts">
+                    </div>
+                    <!-- Invitations Item -->
+                    <div class="slider-item">
+                        <span class="slider-item__type">Invitations</span>
+                        <div class="slider-item__spacer"></div>
+                        <img class="slider-item__img" src="assets/categories/invitations.png" alt="Invitations">
+                    </div>
+                    <!-- Eid Cards Item -->
+                    <div class="slider-item">
+                        <span class="slider-item__type">Eid Cards</span>
+                        <div class="slider-item__spacer"></div>
+                        <img class="slider-item__img" src="assets/categories/eid.png" alt="Eid Cards">
+                    </div>
+                    <!-- Events Item -->
+                    <div class="slider-item">
+                        <span class="slider-item__type">Events</span>
+                        <div class="slider-item__spacer"></div>
+                        <img class="slider-item__img" src="assets/categories/events.png" alt="Events">
+                    </div>
+                </div>
+
+                <div class="slider-dots">
+                    <!-- Dots will be generated dynamically by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing / Premium Section -->
+        <section id="pricing" class="section section--pricing">
+            <div class="wrapper">
+                <header class="section__header">
+                    <div class="section__badge scroll-reveal">Premium</div>
+                    <h2 class="section__title scroll-reveal">Take your design further</h2>
+                    <p class="section__blurb scroll-reveal">Upgrade to Imagitor Premium to unlock professional tools, an
+                        ad-free experience, and unlimited creative freedom.</p>
+                </header>
+
+                <div class="pricing-card scroll-reveal">
+                    <div class="pricing-card__header">
+                        <h3 class="pricing-card__title">Imagitor Premium</h3>
+                        <div class="pricing-card__price">Unlock all features with a one-time purchase or subscription
+                            in-app</div>
+                    </div>
+                    <ul class="pricing-card__features">
+                        <li><i class="fas fa-check-circle"></i> <span><strong>Remove ads</strong> completely</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span><strong>Remove watermark</strong> from
+                                exports</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span><strong>Save unlimited projects</strong></span>
+                        </li>
+                        <li><i class="fas fa-check-circle"></i> <span>Access to <strong>Premium
+                                    templates</strong></span></li>
+                        <li><i class="fas fa-check-circle"></i> <span><strong>Unlimited undo/redo</strong> steps</span>
+                        </li>
+                        <li><i class="fas fa-check-circle"></i> <span>Access to advanced <strong>Harf
+                                    settings</strong></span></li>
+                        <li><i class="fas fa-check-circle"></i> <span><strong>Export and import</strong> project
+                                library</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span>Overall <strong>Premium experience</strong></span>
+                        </li>
+                    </ul>
+                    <div class="pricing-card__cta">
+                        <a href="{{site.playstore_link}}" class="button-new pricing-card__btn">Get Imagitor Premium</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {% if site.faqs %}
+        <!-- FAQ Section -->
+        <section id="faq" class="section section--faq">
+            <div class="wrapper">
+                <header class="section__header section__header--centered">
+                    <h2 class="section__title scroll-reveal">Frequently Asked Questions</h2>
+                </header>
+                <div class="faq-accordion scroll-reveal">
+                    {% for faq in site.faqs %}
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="faq-question-text">{{ faq.question }}</span>
+                            <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>{{ faq.answer }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+        {% endif %}
+
+        <!-- Final CTA -->
+        <section class="final-cta">
+            <h2>Ready to create something remarkable?</h2>
+            <p>Free on Android and iOS. No account required.</p>
+            <div class="cta-badges">
+                <a href="{{site.playstore_link}}" target="_self"><img src="assets/playstore.png"
+                        alt="Get it on Google Play" class="store-badge"></a>
+                <a href="https://apps.apple.com/app/id{{site.ios_app_id}}" target="_self"><img src="assets/appstore.png"
+                        alt="Download on the App Store" class="store-badge"></a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // ===== HEADER SCROLL STATE (frosted-glass on scroll) =====
+            const siteHeader = document.getElementById('site-header');
+            if (siteHeader) {
+                const onHeaderScroll = () => {
+                    siteHeader.classList.toggle('header--scrolled', window.scrollY > 12);
+                };
+                onHeaderScroll();
+                window.addEventListener('scroll', onHeaderScroll, { passive: true });
+            }
+
+            // ===== SLIDER =====
+            const slider = document.querySelector('.templates-slider');
+            const prevBtn = document.querySelector('.slider-nav__button--prev');
+            const nextBtn = document.querySelector('.slider-nav__button--next');
+            const dotsContainer = document.querySelector('.slider-dots');
+            const items = document.querySelectorAll('.slider-item');
+            const totalItems = items.length;
+
+            if (slider && totalItems > 0) {
+                for (let i = 0; i < totalItems; i++) {
+                    const dot = document.createElement('span');
+                    dot.classList.add('slider-dot');
+                    if (i === 0) dot.classList.add('active');
+                    dot.addEventListener('click', () => {
+                        scrollToIndex(i);
+                        resetAutoplay();
+                    });
+                    dotsContainer.appendChild(dot);
+                }
+
+                const dots = document.querySelectorAll('.slider-dot');
+
+                function getScrollStep() {
+                    const card = items[0];
+                    const cardWidth = card.offsetWidth;
+                    const gap = parseFloat(window.getComputedStyle(slider).gap) || 24;
+                    return cardWidth + gap;
+                }
+
+                function scrollToIndex(index) {
+                    const step = getScrollStep();
+                    slider.scrollTo({ left: index * step, behavior: 'smooth' });
+                }
+
+                prevBtn.addEventListener('click', () => {
+                    const step = getScrollStep();
+                    if (slider.scrollLeft <= 10) {
+                        slider.scrollTo({ left: slider.scrollWidth, behavior: 'smooth' });
+                    } else {
+                        slider.scrollBy({ left: -step, behavior: 'smooth' });
+                    }
+                    resetAutoplay();
+                });
+
+                nextBtn.addEventListener('click', () => {
+                    const step = getScrollStep();
+                    const maxScroll = slider.scrollWidth - slider.clientWidth;
+                    if (slider.scrollLeft >= maxScroll - 10) {
+                        slider.scrollTo({ left: 0, behavior: 'smooth' });
+                    } else {
+                        slider.scrollBy({ left: step, behavior: 'smooth' });
+                    }
+                    resetAutoplay();
+                });
+
+                slider.addEventListener('scroll', () => {
+                    const step = getScrollStep();
+                    const activeIndex = Math.round(slider.scrollLeft / step);
+                    dots.forEach((dot, idx) => {
+                        dot.classList.toggle('active', idx === activeIndex);
+                    });
+                });
+
+                let autoplay = null;
+                let autoplayDelay = 3500;
+                let sliderVisible = false;
+
+                function autoSlide() {
+                    const step = getScrollStep();
+                    const maxScroll = slider.scrollWidth - slider.clientWidth;
+                    if (slider.scrollLeft >= maxScroll - 10) {
+                        slider.scrollTo({ left: 0, behavior: 'smooth' });
+                    } else {
+                        slider.scrollBy({ left: step, behavior: 'smooth' });
+                    }
+                }
+
+                function startAutoplay() {
+                    if (autoplay || !sliderVisible) return;
+                    autoplay = setInterval(autoSlide, autoplayDelay);
+                }
+
+                function stopAutoplay() {
+                    clearInterval(autoplay);
+                    autoplay = null;
+                }
+
+                function resetAutoplay() {
+                    autoplayDelay = 5000;
+                    stopAutoplay();
+                    startAutoplay();
+                }
+
+                // Only autoplay while the slider is actually on screen. Otherwise its
+                // off-screen smooth-scroll animations repaint every few seconds and
+                // cause scroll jank in the sections below it.
+                const sliderVisibilityObserver = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        sliderVisible = entry.isIntersecting;
+                        if (sliderVisible) startAutoplay();
+                        else stopAutoplay();
+                    });
+                }, { threshold: 0.2 });
+                sliderVisibilityObserver.observe(slider);
+
+                // Pause when the tab is hidden, resume when it returns (if visible).
+                document.addEventListener('visibilitychange', () => {
+                    if (document.hidden) stopAutoplay();
+                    else startAutoplay();
+                });
+
+                slider.addEventListener('mouseenter', stopAutoplay);
+                slider.addEventListener('mouseleave', () => { if (sliderVisible) startAutoplay(); });
+                slider.addEventListener('touchstart', stopAutoplay, { passive: true });
+                slider.addEventListener('touchend', () => { if (sliderVisible) startAutoplay(); }, { passive: true });
+            }
+
+            // ===== SCROLL REVEAL ANIMATIONS =====
+            const revealElements = document.querySelectorAll('.scroll-reveal');
+            if (revealElements.length > 0) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            const el = entry.target;
+                            // Stagger siblings if they're grid items
+                            const parent = el.parentElement;
+                            if (parent) {
+                                const siblings = Array.from(parent.querySelectorAll(':scope > .scroll-reveal'));
+                                const idx = siblings.indexOf(el);
+                                el.style.animationDelay = `${idx * 80}ms`;
+                            }
+                            el.classList.add('animate-in');
+                            observer.unobserve(el);
+                        }
+                    });
+                }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+                revealElements.forEach((el) => observer.observe(el));
+            }
+
+            // ===== COUNTING ANIMATION FOR SOCIAL PROOF =====
+            const statNumbers = document.querySelectorAll('.social-proof__number[data-count]');
+            if (statNumbers.length > 0) {
+                const countObserver = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            const el = entry.target;
+                            const target = parseFloat(el.dataset.count);
+                            const isDecimal = el.dataset.decimal === 'true';
+                            const duration = 1800;
+                            const start = performance.now();
+
+                            function formatNumber(n) {
+                                if (isDecimal) return n.toFixed(1) + '★';
+                                if (n >= 1000000) return (n / 1000000).toFixed(0) + 'M+';
+                                if (n >= 1000) return (n / 1000).toFixed(0) + 'K+';
+                                return Math.floor(n).toLocaleString();
+                            }
+
+                            function animate(now) {
+                                const elapsed = now - start;
+                                const progress = Math.min(elapsed / duration, 1);
+                                // Ease out cubic
+                                const eased = 1 - Math.pow(1 - progress, 3);
+                                const current = eased * target;
+                                el.textContent = formatNumber(current);
+                                if (progress < 1) requestAnimationFrame(animate);
+                            }
+                            requestAnimationFrame(animate);
+                            countObserver.unobserve(el);
+                        }
+                    });
+                }, { threshold: 0.5 });
+
+                statNumbers.forEach((el) => countObserver.observe(el));
+            }
+
+            // ===== FAQ ACCORDION =====
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const isExpanded = question.getAttribute('aria-expanded') === 'true';
+
+                    // Close all other open FAQs
+                    faqQuestions.forEach(q => {
+                        q.setAttribute('aria-expanded', 'false');
+                        q.nextElementSibling.style.maxHeight = null;
+                        q.classList.remove('active');
+                    });
+
+                    // Toggle current FAQ
+                    if (!isExpanded) {
+                        question.setAttribute('aria-expanded', 'true');
+                        question.classList.add('active');
+                        const answer = question.nextElementSibling;
+                        answer.style.maxHeight = answer.scrollHeight + "px";
+                    }
+                });
+            });
+        });
+    </script>
+
+    {% include footer.html %}
 </body>
+
 </html>

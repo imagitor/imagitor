@@ -1,5 +1,6 @@
 #page title
 page_title                                : Imagitor - AI Graphic Design App - Create your designs with AI.
+url                                       : "https://imagitor.booleanbites.com"
 
 # App Info
 ios_app_id                                : 1207572141                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
@@ -12,7 +13,7 @@ presskit_download_link                    :                                     
 app_icon                                  : /assets/appicon.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
 app_name                                  : Imagitor                                          # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_price                                 : AI Graphic Design App                                          # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_description                           : Create your designs with AI. Imagitor is a free graphic design app to create social media posts, presentations, posters and other content.
+app_description                           : Imagitor is a professional graphic design app for Urdu calligraphy, AI-assisted generation, and precision vector design — create social posts, posters, logos, and more from a single canvas.
 
 enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
 
@@ -110,7 +111,7 @@ features                                  :
 # Theme Settings
 topbar_color                              : "#000000"
 topbar_transparency                       : 0.1
-topbar_title_color                        : "#ffffff"
+topbar_title_color                        : "#212123"
 
 cover_image                               : assets/imagitor_gradient_bg.jpg                    # Replace with alternative image path or image URL.
 cover_overlay_color                       : "#363b3d"
@@ -137,17 +138,20 @@ social_icons_background_color             : "#e6e6e6"
 
 footer_text_color                         : "#666666"
 
-
-
-
-
-
-
-
-
-
-
-
+# FAQ List
+faqs:
+  - question: "Is Imagitor free to use?"
+    answer: "Yes. Imagitor is absolutely free to download and use, with a comprehensive set of professional features available at no cost. However, you can upgrade to a paid version for an ad-free premium experience and unlock advanced tools."
+  - question: "What is included in Imagitor Premium?"
+    answer: "Imagitor Premium unlocks the full potential of the app. It provides an ad-free experience, removes watermarks from exports, and gives you unlimited project saves, unlimited undo/redo steps, and access to premium templates and advanced Harf settings. You can unlock it via a one-time purchase or subscription."
+  - question: "Do I need an account to start designing?"
+    answer: "No account is required. You can begin designing the moment the app is installed."
+  - question: "Can I use my own fonts?"
+    answer: "Yes. You can import and use your own custom fonts to fully personalize your designs."
+  - question: "Is Imagitor available for iOS?"
+    answer: "Yes. Imagitor is available on both Android and iOS, through the Google Play Store and the Apple App Store."
+  - question: "Can I save my projects to edit later?"
+    answer: "Yes. You can save any design as a project and continue editing it whenever you like."
 
 ####################################################
 ### Jekyll Configuration. No need to touch this. ###
@@ -170,3 +174,6 @@ collections:
 
 # Markdown rendering
 markdown: kramdown
+
+# Permalink format for blog posts
+permalink: /blog/:title/
