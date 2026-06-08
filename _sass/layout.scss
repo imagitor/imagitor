@@ -1329,8 +1329,6 @@ footer::before {
     right: 0;
     height: 2px;
     background: linear-gradient(90deg, #302b63, #b47eed, #fc7a9b, #302b63);
-    background-size: 200% 100%;
-    animation: borderShimmer 6s linear infinite;
 }
 @keyframes borderShimmer {
     0% { background-position: 0% 50%; }
