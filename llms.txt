@@ -25,3 +25,9 @@ App Store: https://appsto.re/i6725K2
 {% for faq in site.faqs %}
 - **{{ faq.question }}**: {{ faq.answer }}
 {% endfor %}
+
+## Blog Posts
+Read our latest updates and guides:
+{% for post in site.posts %}
+- [{{ post.title }}]({{ site.url }}{{ post.url }}) - {{ post.excerpt | strip_html | truncatewords: 20 }}
+{% endfor %}

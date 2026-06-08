@@ -4,8 +4,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-	<title class="pageTitle">{{ site.page_title }}</title>
-	<meta name="description" content="{{ site.app_description }}">
+	<title class="pageTitle">{% if page.title %}{{ page.title }} | {{ site.app_name }}{% else %}{{ site.page_title }}{% endif %}</title>
+	<meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | truncatewords: 30 | strip_newlines }}{% else %}{{ site.app_description }}{% endif %}">
 	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
 	<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
@@ -13,16 +13,16 @@
 	<link rel="shortcut icon" href="{{ site.app_icon }}">
 
 	<!-- SEO & Open Graph Meta Tags -->
-	<meta property="og:title" content="{{ site.page_title }}">
-	<meta property="og:description" content="{{ site.app_description }}">
-	<meta property="og:type" content="website">
+	<meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.app_name }}{% else %}{{ site.page_title }}{% endif %}">
+	<meta property="og:description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | truncatewords: 30 | strip_newlines }}{% else %}{{ site.app_description }}{% endif %}">
+	<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
 	<meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html','' }}">
 	<meta property="og:image" content="{{ site.url }}{{ site.app_icon }}">
 
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="{{ site.page_title }}">
-	<meta name="twitter:description" content="{{ site.app_description }}">
-	<meta name="twitter:image" content="{{ site.url }}{{ site.app_icon }}">
+	<meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {{ site.app_name }}{% else %}{{ site.page_title }}{% endif %}">
+	<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | truncatewords: 30 | strip_newlines }}{% else %}{{ site.app_description }}{% endif %}">
+	<meta name="twitter:image" content="{{ site.url }}{% if page.image %}{{ page.image }}{% else %}{{ site.app_icon }}{% endif %}">
 	{% if site.twitter_username %}
 	<meta name="twitter:site" content="@{{ site.twitter_username }}">
 	{% endif %}
