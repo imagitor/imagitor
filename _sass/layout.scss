@@ -1510,6 +1510,12 @@ footer::before {
         display: none;
     }
 }
+@media (max-width: 767px) {
+    .templates-slider {
+        padding-left: calc(50vw - 8rem);
+        padding-right: calc(50vw - 8rem);
+    }
+}
 @media (min-width: 1024px) {
     .templates-slider {
         padding-left: 2rem;
@@ -1540,6 +1546,11 @@ footer::before {
         transform: translateY(-4px);
         border-color: var(--border-strong);
         box-shadow: var(--shadow-md);
+    }
+}
+@media (max-width: 767px) {
+    .slider-item {
+        scroll-snap-align: center;
     }
 }
 
