@@ -5,6 +5,9 @@ layout: null
 
 {{ site.app_description }}
 
+## What's New — Video Editor
+Imagitor is the first ever Urdu video editor. Edit videos with a full timeline — trim clips, add transitions and filters. Add animated Urdu text overlays, stickers, and background music from a free library. AI Slides turns a text prompt into a ready-made slideshow video.
+
 ## About the App
 Name: {{ site.app_name }}
 Category: {{ site.app_price }}

@@ -1,5 +1,5 @@
 #page title
-page_title                                : Imagitor - AI Graphic Design App - Create your designs with AI.
+page_title                                : Imagitor - Urdu Design & Video | Urdu design & video editor — posts, posters, AI images & videos with Urdu text.
 url                                       : "https://imagitor.booleanbites.com"
 
 # App Info
@@ -11,9 +11,9 @@ presskit_download_link                    :                                     
                                                                                       # Or upload your press kit file to assets and set path accordingly (e.g. "assets/your_press_kit.zip").
 
 app_icon                                  : /assets/appicon.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
-app_name                                  : Imagitor                                          # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_price                                 : AI Graphic Design App                                          # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_description                           : Imagitor is a professional graphic design app for Urdu calligraphy, AI-assisted generation, and precision vector design — create social posts, posters, logos, and more from a single canvas.
+app_name                                  : Imagitor - Urdu Design & Video                                          # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
+app_price                                 : Urdu Design & Video Editor App                                          # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
+app_description                           : Imagitor is a professional graphic design and video editing app — the first ever Urdu video editor. Create posts, posters, logos, and AI images with pro Urdu calligraphy, and edit videos with a full timeline — transitions, filters, animated Urdu text overlays, stickers, free background music, and AI Slides.
 
 enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
 
@@ -41,6 +41,18 @@ features                                  :
   - title                                 : Image designs with AI
     description                           : Generate stunning visual designs from simple text prompts with high-resolution output.
     fontawesome_icon_name                 : wand-sparkles
+
+  - title                                 : Video Editor
+    description                           : Edit videos with a full timeline — trim clips, add transitions, filters, and animated Urdu text overlays. The first ever Urdu video editor.
+    fontawesome_icon_name                 : film
+
+  - title                                 : AI Slides
+    description                           : Create text slide videos with AI — turn a text prompt into a ready-made slideshow video.
+    fontawesome_icon_name                 : photo-film
+
+  - title                                 : Video Music
+    description                           : Free background music library for your videos — add a soundtrack in one tap.
+    fontawesome_icon_name                 : music
 
   - title                                 : Harf Settings
     description                           : Touch your words. Move them wherever you want. Beautify your headings, poetry or any text with custom font, color or shadow for words.
@@ -142,8 +154,16 @@ footer_text_color                         : "#666666"
 faqs:
   - question: "Is Imagitor free to use?"
     answer: "Yes. Imagitor is absolutely free to download and use, with a comprehensive set of professional features available at no cost. However, you can upgrade to a paid version for an ad-free premium experience and unlock advanced tools."
+  - question: "Does Imagitor have a video editor?"
+    answer: "Yes. Imagitor now includes a full video editor — the first ever Urdu video editor. Edit videos on a multi-track timeline: trim and split clips, add transitions and filters, and overlay animated Urdu text, stickers, and background music."
+  - question: "Can I add Urdu text to videos?"
+    answer: "Yes. You can overlay animated Urdu, Arabic, and Persian text on your videos using the same Nastaliq fonts and text effects as the design editor, with animations like fade, slide, and typewriter."
+  - question: "What is AI Slides?"
+    answer: "AI Slides turns a text prompt into a ready-made slideshow video. Describe your topic and Imagitor generates styled text slides that you can edit, re-time, and export as a video."
+  - question: "Can I add music to my videos?"
+    answer: "Yes. Imagitor includes a free background music library for your videos. Pick a track, drop it on the timeline, and trim it to fit your video."
   - question: "What is included in Imagitor Premium?"
-    answer: "Imagitor Premium unlocks the full potential of the app. It provides an ad-free experience, removes watermarks from exports, and gives you unlimited project saves, unlimited undo/redo steps, and access to premium templates and advanced Harf settings. You can unlock it via a one-time purchase or subscription."
+    answer: "Imagitor Premium unlocks the full potential of the app. It provides an ad-free experience, removes watermarks from exports, unlocks Full HD 1080p video export, and gives you unlimited project saves, unlimited undo/redo steps, and access to premium templates and advanced Harf settings. You can unlock it via a one-time purchase or subscription."
   - question: "Do I need an account to start designing?"
     answer: "No account is required. You can begin designing the moment the app is installed."
   - question: "Can I use my own fonts?"

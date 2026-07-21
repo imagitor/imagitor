@@ -274,6 +274,11 @@
         radial-gradient(ellipse 50% 60% at 25% 45%, rgba(220, 238, 254, 0.4) 0%, transparent 70%),
         radial-gradient(ellipse 40% 50% at 80% 55%, rgba(210, 216, 249, 0.35) 0%, transparent 70%);
 }
+.section--video::before {
+    background:
+        radial-gradient(ellipse 50% 60% at 20% 45%, rgba(252, 231, 243, 0.45) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 50% at 78% 55%, rgba(251, 207, 232, 0.35) 0%, transparent 70%);
+}
 .section--assets::before {
     background:
         radial-gradient(ellipse 50% 60% at 20% 45%, rgba(254, 243, 199, 0.4) 0%, transparent 70%),
@@ -343,6 +348,9 @@
 }
 .section--collaborate .section__badge {
     background-image: linear-gradient(204deg, #dceefe 0%, #d2d8f9 100%);
+}
+.section--video .section__badge {
+    background-image: linear-gradient(204deg, #fce7f3 0%, #fbcfe8 100%);
 }
 .section--assets .section__badge {
     background-image: linear-gradient(191deg, #ffe0b2 0%, #ffcc80 100%);
@@ -540,6 +548,9 @@
 .section--collaborate .item__badge {
     background-color: #4389e6;
 }
+.section--video .item__badge {
+    background-color: #e91e8c;
+}
 .section--assets .item__badge {
     background-color: #e67e22;
 }
@@ -571,6 +582,7 @@
 .section--design   .item__inner { --stage-tint: rgba(85, 93, 255, 0.14); }
 .section--prototype .item__inner { --stage-tint: rgba(0, 179, 164, 0.14); }
 .section--collaborate .item__inner { --stage-tint: rgba(67, 137, 230, 0.14); }
+.section--video    .item__inner { --stage-tint: rgba(233, 30, 140, 0.14); }
 .section--assets   .item__inner { --stage-tint: rgba(238, 128, 25, 0.14); }
 
 .item__inner::before {
@@ -1037,6 +1049,9 @@
 
 .section--collaborate .sketch-selection-box { border-color: #0080ff; }
 .section--collaborate .sketch-selection-box__inner-box { background-color: #0080ff; }
+
+.section--video .sketch-selection-box { border-color: #e91e8c; }
+.section--video .sketch-selection-box__inner-box { background-color: #e91e8c; }
 
 .section--assets .sketch-selection-box { border-color: #ff9500; }
 .section--assets .sketch-selection-box__inner-box { background-color: #ff9500; }

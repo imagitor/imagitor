@@ -8,6 +8,14 @@ include_in_header: false
 
 <br>
 
+### New — Video Editor
+
+- Video Editor: edit videos with a full timeline — trim clips, split, reorder, and add transitions and filters. The first ever Urdu video editor.
+- Animated Urdu text overlays, stickers, and shapes on your videos — with the same Nastaliq fonts and text effects as the design editor.
+- AI Slides: turn a text prompt into a ready-made slideshow video.
+- Video Music: free background music library for your videos.
+- Share your videos straight to WhatsApp status, Instagram, and YouTube.
+
 ### 1.8.3
 
 - New design for online templates.
